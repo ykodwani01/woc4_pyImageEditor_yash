@@ -46,7 +46,7 @@ def onbw():
 
 def onsave():
     f = filedialog.asksaveasfile(initialfile = 'Untitled.jpg',defaultextension=".jpg",filetypes=[("All Files","*.*"),("PNG","*.png"),("JPEG","*jpg")]) 
-
+    img.save(f)
 file_button = Button( root,text="Open file",command=onopen,fg="black").pack()
 rotate_button = Button( root,text="Rotate file",command=onrotate,fg="red").pack()
 flip_button = Button(root,text="Flip right",command=flipr,fg="Blue").pack()
